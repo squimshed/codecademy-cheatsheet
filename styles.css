@@ -1,4 +1,4 @@
-* {
+body, html {
     font-family: 'Geist Mono', monospace;
     word-wrap: break-word;
 }
@@ -45,6 +45,10 @@ nav ul {
 
 nav li {
     border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+nav a {
+    text-decoration: none;
 }
 
 ul li:last-child {
@@ -109,9 +113,15 @@ dt {
     margin-bottom: 10px;
 }
 
-dt a {
+/* Links */
+a {
     color: #618ff2;
     font-weight: 900;
+}
+
+a:hover {
+    color: #82a6f4;
+    text-decoration: none;
 }
 
 /* Tables */
