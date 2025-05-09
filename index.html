@@ -8,9 +8,26 @@
 </head>
 
 <body>
-    <h1>HTML &amp; CSS Cheat Sheet</h1>
-
+    <main>
+        <nav>
+            <h4>Table of Contents</h4>
+        <ul class="btn-link">
+            <li><a href="#basics">Basic Structure</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#ids-classes">IDs &amp; Classes</a></li>
+            <li><a href="#links-images">Links &amp; Images</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+<div id="sticky-right">
     <div class="main">
+        <img src="arrows/arrows.svg" alt="arrows" id="arrows">
+        <img src="arrows/arrow-mobile.svg" alt="arrow" id="arrow-mobile">
+    <h1>HTML &amp; CSS Cheat Sheet</h1>
+    <section id="basics">
+        <div class="general">
         <h2>Basic Structure</h2>
         <table>
             <thead>
@@ -39,7 +56,7 @@
                 </tr>
                 <tr>
                     <td><span class="code">&lt;body&gt;</span></td>
-                    <td>Defines the document's body, the main content of the HTML document</td>
+                    <td>Defines the document's body, the general content of the HTML document</td>
                 </tr>
                 <tr>
                     <td><span class="code">&lt;link rel="stylesheet" href="styles.css"&gt;</span></td>
@@ -56,9 +73,11 @@
             </tbody>
         </table>
     </div>
+</section>
 
-    <div class="main">
-    <h2>Text</h2>
+<section id="typography">
+    <div class="general">
+    <h2>Typography</h2>
     <table>
         <thead>
             <tr>
@@ -86,8 +105,10 @@
         </tbody>
     </table>
     </div>
+    </section>
 
-    <div class="main">
+    <section id="tables">
+    <div class="general">
     <h2>Tables</h2>
     <h3>Table Tags</h3>
     <table>
@@ -173,8 +194,10 @@
         </tbody>
     </table>
     </div>
+</section>
 
-    <div class="main">
+    <section id="lists">
+    <div class="general">
     <h2>Lists</h2>
     <table>
         <thead>
@@ -211,8 +234,10 @@
         </tbody>
     </table>
     </div>
+    </section>
 
-    <div class ="main">
+    <section id="ids-classes">
+    <div class ="general">
     <h2>IDs &amp; Classes</h2>
     <table>
         <thead>
@@ -234,8 +259,10 @@
         </tbody>
     </table>
     </div>
+    </section>
 
-    <div class="main">
+    <section id="links-images">
+    <div class="general">
     <h2>Links &amp; Images</h2>
     <table>
         <thead>
@@ -256,6 +283,23 @@
         </tbody>
     </table>
     </div>
+</section>
+
+<section id="resources">
+    <div class="general">
+        <h2>Resources</h2>
+        <dl>
+            <dt><a href="https://www.w3schools.com/html/">W3Schools</a></dt>
+            <dd>Learn to code with the world's largest web developer site.</dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a></dt>
+            <dd>Your comprehensive resource for web development documentation, covering everything from CSS, HTML, JavaScript, Web APIs, and other web technologies.</dd>
+        </dl>
+    </div>
+</section>
+</div>
+
+</div>
+</main>
 </body>
 
 </html>
