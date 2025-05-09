@@ -1,0 +1,64 @@
+* {
+    font-family: 'Geist Mono', monospace;
+    word-wrap: break-word;
+}
+
+body {
+    display: block;
+    margin: 8px;
+    padding-top: 50px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.main {
+    width: max(50%, min(600px, 80%));
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 100px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.code {
+    font-family: monospace;
+}
+
+table {
+    table-layout: fixed;
+    width:100%;
+    border-collapse: collapse;
+    background-color: #D0DFFF;
+    margin-bottom: 50px;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+thead {
+    text-align: left;
+    height: 50px;
+}
+  
+th, td {
+    padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+    background-color:#DFEAFF;
+}
+  
+tbody tr {
+    background-color:#F7F9FF;
+}
+
+.first-col {
+    width:20%;
+}
