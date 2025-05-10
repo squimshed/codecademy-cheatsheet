@@ -24,7 +24,7 @@ nav {
     justify-content: center;
     align-items: stretch;
     width: 15rem;
-    margin-top: 298px;
+    margin-top: 340px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -103,6 +103,12 @@ h4 {
 .code {
     font-family: monospace;
     background-color: rgb(255, 255, 70);
+}
+
+.code-indent {
+    font-family: monospace;
+    background-color: rgb(255, 255, 70);
+    padding-left: 15px;
 }
 
 dd {
