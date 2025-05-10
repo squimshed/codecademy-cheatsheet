@@ -12,12 +12,14 @@
         <nav>
             <h4>Table of Contents</h4>
         <ul class="btn-link">
-            <li><a href="#basics">Basic Structure</a></li>
+            <li><a href="#basics">Basics</a></li>
+            <li><a href="#ids-classes">IDs &amp; Classes</a></li>
             <li><a href="#typography">Typography</a></li>
             <li><a href="#tables">Tables</a></li>
             <li><a href="#lists">Lists</a></li>
-            <li><a href="#ids-classes">IDs &amp; Classes</a></li>
-            <li><a href="#links-images">Links &amp; Images</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#buttons">Buttons</a></li>
             <li><a href="#resources">Resources</a></li>
         </ul>
       </nav>
@@ -28,7 +30,8 @@
     <h1>HTML &amp; CSS Cheat Sheet</h1>
     <section id="basics">
         <div class="general">
-        <h2>Basic Structure</h2>
+        <h2>Basics</h2>
+        <h3>HTML Tags</h3>
         <table>
             <thead>
                 <tr>
@@ -70,14 +73,115 @@
                     <td><span class="code">&lt;span&gt;</span></td>
                     <td>An inline container used to mark up a part of a text, or a part of a document</td>
                 </tr>
+                <tr>
+                    <td><span class="code">&lt;br&gt;</span></td>
+                    <td>Inserts a single line break</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;hr&gt;</span></td>
+                    <td>Creates a thematic break in the content (horizontal line)</td>
+                </tr>
             </tbody>
         </table>
+        <h3>CSS Attributes</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th class="first-col">Attribute</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">background-color</span></td>
+                    <td>Sets the background color of an element</td>
+                </tr>
+                <tr>
+                    <td><span class="code">color:</span></td>
+                    <td>Sets the foreground color value of an element's text and text decorations, and sets the <span class="code">currentcolor</span> value. <span class="code">currentcolor</span> may be used as an indirect value on other properties and is the default for other color properties, such as <span class="code">border-color</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>CSS Pseudo-Classes</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th class="first-col">Pseudo-Class</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">:root</span></td>
+                    <td>Matches the root element of a tree representing the document, it represents the <span class="code">&lt;html&gt;</span> element and is identical to the selector html, except that its specificity is higher. These CSS variables can then be used throughout the style sheet. Example:
+                        <br>
+                        <span class="code">
+                            :root {
+                                <br>
+                                <span class="code-indent">--primary-color: hotpink;</span>
+                                <br>
+                                <span class="code-indent">--pane-padding: 5px 42px;</span>
+                                <br>
+                              }
+                              <br><br>
+                              color: var(--primary-color);
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+            
+    </div>
+</section>
+
+<section id="ids-classes">
+    <div class ="general">
+    <h2>IDs &amp; Classes</h2>
+    <h3>HTML Tags</h3>
+    <table>
+        <thead>
+            <tr>
+                <th class="first-col">Tag</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;id=""&gt;</span></td>
+                <td>Specifies a unique id for an HTML element, can only be used for one HTML element within the page</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;class=""&gt;</span></td>
+                <td>Points to a class name in a stylesheet, can be used for multiple elements</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>CSS Attributes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th class="first-col">Attribute</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">#</span></td>
+                <td><span class="code">#id</span> in CSS, can only be used for one element within the page</td>
+            </tr>
+            <tr>
+                <td><span class="code">.</span></td>
+                <td><span class="code">.class</span> points to a class name in a stylesheet, can be used for multiple elements</td>
+            </tr>
+        </tbody>
+    </table>
     </div>
 </section>
 
 <section id="typography">
     <div class="general">
     <h2>Typography</h2>
+    <h3>HTML Tags</h3>
     <table>
         <thead>
             <tr>
@@ -88,19 +192,38 @@
         <tbody>
             <tr>
                 <td><span class="code">&lt;h1&gt; to &lt;h6&gt;</span></td>
-                <td>Defines HTML headings, from largest <span class="code">&lt;h1&gt;</span> to smallest <span class="code">&lt;h6&gt;</span></td>
+                <td>Defines HTML headings, from largest <span class="code">&lt;h1&gt;</span> to smallest <span class="code">&lt;h6&gt;</span>, do not skip headings</td>
             </tr>
             <tr>
                 <td><span class="code">&lt;p&gt;</span></td>
                 <td>Defines a paragraph of text</td>
             </tr>
+        </tbody>
+    </table>
+    <h3>CSS Attributes</h3>
+    <table>
+        <thead>
             <tr>
-                <td><span class="code">&lt;br&gt;</span></td>
-                <td>Inserts a single line break</td>
+                <th class="first-col">Attribute</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">font-family</span></td>
+                <td>Defines font family, separate with commas for backup fonts</span></td>
             </tr>
             <tr>
-                <td><span class="code">&lt;hr&gt;</span></td>
-                <td>Creates a thematic break in the content (horizontal line)</td>
+                <td><span class="code">font-weight</span></td>
+                <td>Defines the font weight, dependent on typeface</td>
+            </tr>
+            <tr>
+                <td><span class="code">text-transform</span></td>
+                <td>Specifies how to capitalize an element's text like <span class="code">capitalize</span>, <span class="code">uppercase</span>, <span class="code">lowercase</span>, <span class="code">none</span></td>
+            </tr>
+            <tr>
+                <td><span class="code">text-align</span></td>
+                <td>Sets the horizontal alignment of the inline-level content inside a block element or table-cell box like <span class="code">center</span>, <span class="code">start</span>, <span class="code">end</span>, <span class="code">justify</span></td>
             </tr>
         </tbody>
     </table>
@@ -110,7 +233,7 @@
     <section id="tables">
     <div class="general">
     <h2>Tables</h2>
-    <h3>Table Tags</h3>
+    <h3>HTML Tags</h3>
     <table>
         <thead>
             <tr>
@@ -149,7 +272,6 @@
             </tr>
         </tbody>
     </table>
-    <h3>Table Span Tags</h3>
     <table>
         <thead>
             <tr>
@@ -169,7 +291,7 @@
         </tbody>
     </table>
 
-    <h3>Table CSS Attributes</h3>
+    <h3>CSS Attributes</h3>
     <table>
         <thead>
             <tr>
@@ -236,34 +358,30 @@
     </div>
     </section>
 
-    <section id="ids-classes">
-    <div class ="general">
-    <h2>IDs &amp; Classes</h2>
-    <table>
-        <thead>
-            <tr>
-                <th class="first-col">Tag</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><span class="code">&lt;id=""&gt;</span></td>
-                <td>#id attribute specifies a unique id for an HTML element, can only be used for one HTML
-                    element within the page</td>
-            </tr>
-            <tr>
-                <td><span class="code">&lt;class=""&gt;</span></td>
-                <td>.class attribute point to a class name in a style sheet</td>
-            </tr>
-        </tbody>
-    </table>
+    <section id="images">
+        <div class="general">
+        <h2>Images</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="first-col">Tag</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">&lt;img src="image.jpg" alt="description"&gt;</span></td>
+                    <td>Defines an image</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     </section>
 
-    <section id="links-images">
+    <section id="links">
     <div class="general">
-    <h2>Links &amp; Images</h2>
+    <h2>Links</h2>
+    <h3>HTML Tags</h3>
     <table>
         <thead>
             <tr>
@@ -276,9 +394,105 @@
                 <td><span class="code">&lt;a&gt;</span></td>
                 <td>Anchor element to create a hyperlink i.e. <span class="code">&lt;a href="https://google.com"&gt;</span></td>
             </tr>
+        </tbody>
+    </table>
+    <h3>CSS Psedo-Classes</h3>
+    <p>Follows the LVHA <span class="code">:link</span> - <span class="code">:visited</span> - <span class="code">:hover</span> - <span class="code">:active</span> order.</p>
+    <table>
+        <thead>
             <tr>
-                <td><span class="code">&lt;img src="image.jpg" alt="description"&gt;</span></td>
-                <td>Defines an image</td>
+                <th class="first-col">Pseudo-Class</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">a:hover</span></td>
+                <td>Generally triggered when the user hovers over an element with the cursor (mouse pointer)</td>
+            </tr>
+            <tr>
+                <td><span class="code">a:link</span></td>
+                <td>Represents an element that has not yet been visited and matches every unvisited <span class="code">&lt;a&gt;</span> or <span class="code">&lt;area&gt;</span> element that has an href attribute</td>
+            </tr>
+            <tr>
+                <td><span class="code">a:active</span></td>
+                <td>Represents an element (such as a button) that is being activated by the user, when pressing down the primary mouse button</td>
+            </tr>
+            <tr>
+                <td><span class="code">a:visited</span></td>
+                <td>Applies once the link has been visited by the user</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</section>
+
+<section id="buttons">
+    <div class="general">
+    <h2>Buttons</h2>
+    <h3>HTML Tags</h3>
+    <table>
+        <thead>
+            <tr>
+                <th class="first-col">Tag</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;button&gt;</span></td>
+                <td>Defines a button element</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>CSS Attributes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th class="first-col">Attribute</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">box-shadow</span></td>
+                <td>Adds shadow effects around the element's frame, <span class="code">&lt;length&gt;</span> (offset-x) | <span class="code">&lt;length&gt;</span> (offset-y) | <span class="code">&lt;blur&gt;</span> | <span class="code">&lt;color&gt;</span></td>
+            </tr>
+            <tr>
+                <td><span class="code">cursor:</span></td>
+                <td>Specifies the type of cursor</td>
+            </tr>
+            <tr>
+                <td><span class="code">transition: background-color 0.3s ease, color 0.3s ease;</span></td>
+                <td>Specifies the easing on transition on <span class="code">:hover</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>CSS Psedo-Classes</h3>
+    <p>Follows the LVHA <span class="code">:link</span> - <span class="code">:visited</span> - <span class="code">:hover</span> - <span class="code">:active</span> order.</p>
+    <table>
+        <thead>
+            <tr>
+                <th class="first-col">Pseudo-Class</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">:hover</span></td>
+                <td>Generally triggered when the user hovers over an element with the cursor (mouse pointer)</td>
+            </tr>
+            <tr>
+                <td><span class="code">:link</span></td>
+                <td>Represents an element that has not yet been visited and matches every unvisited <span class="code">&lt;a&gt;</span> or <span class="code">&lt;area&gt;</span> element that has an href attribute</td>
+            </tr>
+            <tr>
+                <td><span class="code">:active</span></td>
+                <td>Represents an element (such as a button) that is being activated by the user, when pressing down the primary mouse button</td>
+            </tr>
+            <tr>
+                <td><span class="code">:visited</span></td>
+                <td>Applies once the link has been visited by the user</td>
             </tr>
         </tbody>
     </table>
